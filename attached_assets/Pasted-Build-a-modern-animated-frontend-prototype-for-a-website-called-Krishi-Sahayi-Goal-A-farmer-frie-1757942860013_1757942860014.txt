@@ -1,0 +1,97 @@
+Build a modern, animated frontend prototype for a website called Krishi Sahayi.
+
+Goal:
+A farmer-friendly platform that provides weather forecasts, crop advisory, mandi prices, government schemes, and an AI Mode for plant disease detection via image upload.
+
+Design Guidelines:
+
+Responsive design (mobile-first).
+
+Nature-inspired theme: green, yellow, earthy tones.
+
+Clean, minimal UI with rounded corners, soft shadows, and grid layouts.
+
+Smooth animations using Tailwind CSS + Framer Motion (fade, slide, hover effects).
+
+Use cards for sections and lucide-react icons.
+
+Pages / Sections:
+
+Landing Page
+
+Hero with animated farm illustration/banner.
+
+Headline: "Krishi Sahayi – Your Digital Farming Companion".
+
+Subtext: Empowering farmers with data-driven insights for better yield & income.
+
+CTA buttons: “Get Started” and “Detect Disease”.
+
+Features Section
+
+Animated feature cards:
+
+🌦️ Weather Forecasting & Alerts
+
+🌱 Crop Advisory
+
+📊 Market Insights & Mandi Prices
+
+🏛️ Government Schemes & Subsidies
+
+🤖 AI Mode – Disease Detection by Image
+
+AI Mode Page (Main Part)
+
+Large drag-and-drop / upload area with animation.
+
+Option to take photo (camera support on mobile).
+
+Preview of uploaded image with crop/rotate.
+
+Animated processing state: progress bar + pulsing plant icon.
+
+Result panel (animated slide-in) with:
+
+Disease name, confidence %, severity tag.
+
+Heatmap overlay toggle (crossfade animation).
+
+Actionable recommendations in bullet list.
+
+Buttons: Save Result, Share, Ask an Expert.
+
+If confidence is low → show warning + retry suggestions.
+
+Why Krishi Sahayi?
+
+Highlights: local language support, offline-friendly, trust & adoption.
+
+Footer
+
+About Us, Contact, Privacy links.
+
+Animated social icons.
+
+Animations:
+
+Hero text fade-in + slide-up.
+
+Feature cards staggered fade-in.
+
+Upload area with pulse effect.
+
+Result panel slide-up reveal.
+
+Heatmap toggle with crossfade.
+
+Button hover → scale + background transition.
+
+Tech Stack:
+
+React + Tailwind CSS + Framer Motion.
+
+Mock API call for AI Mode: /api/detect-disease → returns JSON with disease, confidence, recommendations, heatmap image.
+
+Output:
+A responsive, animated frontend prototype with all sections, focusing heavily on the AI Mode disease detection flow. Backend is not required — just placeholders and mock responses.
