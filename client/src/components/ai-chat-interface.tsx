@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/context/language-context";
 import { useFileUpload } from "@/hooks/use-file-upload";
 import type { DiseaseDetectionResponse } from "@shared/schema";
+import { IoMicOutline } from "react-icons/io5";
 
 interface ChatMessage {
   id: string;
@@ -343,16 +344,15 @@ export default function AiChatInterface() {
       {/* Input Area */}
       <div className="border-t border-border p-4 bg-muted/30">
         <div className="flex items-center space-x-2">
-          <Button
-            variant="outline"
-            size="sm"
+          <span
+            className="border-[1px] p-2 rounded-full hover:bg-green-400"
             onClick={triggerFileUpload}
-            className="shrink-0"
-            data-testid="button-upload-image"
           >
-            <Camera className="w-4 h-4" />
-          </Button>
-          
+            <Camera className="w-5 h-5" />
+          </span>
+          <span className="border-[1px] p-2 rounded-full hover:bg-green-400">
+            <IoMicOutline className="w-5 h-5" />
+          </span>
           <div className="flex-1 relative">
             <Input
               value={inputMessage}
